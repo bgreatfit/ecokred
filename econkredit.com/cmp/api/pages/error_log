@@ -1,0 +1,10 @@
+[20-Oct-2016 15:26:22 Africa/Lagos] PHP Warning:  Unterminated comment starting line 5 in /home/econkred/public_html/econkredit.com/cmp/api/pages/api-login.php on line 5
+[20-Oct-2016 15:27:45 Africa/Lagos] PHP Warning:  Unterminated comment starting line 5 in /home/econkred/public_html/econkredit.com/cmp/api/pages/api-login.php on line 5
+[20-Oct-2016 15:37:00 Africa/Lagos] PHP Warning:  Unterminated comment starting line 5 in /home/econkred/public_html/econkredit.com/cmp/api/pages/api-login.php on line 5
+[20-Oct-2016 15:37:04 Africa/Lagos] PHP Warning:  Unterminated comment starting line 5 in /home/econkred/public_html/econkredit.com/cmp/api/pages/api-login.php on line 5
+[20-Oct-2016 15:37:23 Africa/Lagos] PHP Warning:  Unterminated comment starting line 5 in /home/econkred/public_html/econkredit.com/cmp/api/pages/api-login.php on line 5
+[22-Oct-2016 16:41:47 Africa/Lagos] PHP Fatal error:  Call to undefined function strip_slashes() in /home/econkred/public_html/econkredit.com/cmp/api/pages/api.php on line 21
+[22-Oct-2016 16:41:54 Africa/Lagos] PHP Fatal error:  Call to undefined function strip_slashes() in /home/econkred/public_html/econkredit.com/cmp/api/pages/api.php on line 21
+[25-Oct-2016 09:16:14 Africa/Lagos] PHP Warning:  mail() has been disabled for security reasons in /home/econkred/public_html/econkredit.com/cmp/api/pages/email.php on line 31
+[25-Oct-2016 09:16:21 Africa/Lagos] PHP Warning:  mail() has been disabled for security reasons in /home/econkred/public_html/econkredit.com/cmp/api/pages/email.php on line 31
+[27-Oct-2016 07:46:14 Africa/Lagos] PHP Warning:  mail() has been disabled for security reasons in /home/econkred/public_html/econkredit.com/cmp/api/pages/email.php on line 31

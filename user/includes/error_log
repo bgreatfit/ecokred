@@ -1,0 +1,42 @@
+[23-Oct-2016 07:52:46 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'econkred_econkredit'@'localhost' (using password: YES)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'econkred_econkr...', ',KW(dyReaF9b')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[26-Oct-2016 22:21:48 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[27-Oct-2016 11:59:50 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[27-Oct-2016 12:03:42 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[27-Oct-2016 12:05:48 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/register.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[27-Oct-2016 12:19:16 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
+[27-Oct-2016 12:19:55 Africa/Lagos] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/econkred/public_html/user/includes/db.php:10
+Stack trace:
+#0 /home/econkred/public_html/user/includes/db.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/econkred/public_html/user/includes/login.php(2): include('/home/econkred/...')
+#2 {main}
+  thrown in /home/econkred/public_html/user/includes/db.php on line 10
