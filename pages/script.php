@@ -2,7 +2,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-          <?php echo "<H1>Hello</H1>"?>
+          <?php
+             for($i =0;$i<5; $i++){
+                 echo "<H1>Hello</H1>";
+             }
+          ?>
+
         </div>
     </div>
 </div>
