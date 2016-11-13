@@ -157,7 +157,7 @@ $('.edit').click(function(e){
 	var url = "includes/productshow.php";
 	var data = {'prod': id};
 	$(".modal-body").html("");
-	
+
 	$.getJSON(url,data,function(resp){
             if(resp.status == 200){
 				var info = '<div class="row"><div class="col-sm-4 mr30" ><img width="200" class="img-thumbnail img-rounded" src="../images/products/'+resp.data.picture+'"><br/><br/><p class="lead">'+resp.data.name+'</p></div>'+
