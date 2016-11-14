@@ -62,7 +62,7 @@
     </h3>
 
     <?php
-    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 LIMIT 4");
+    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 ORDER BY id desc LIMIT 4");
     $q3->execute();
 
     while($read = $q3->fetch(PDO::FETCH_OBJ)){
@@ -88,7 +88,7 @@
 <?php } ?>
     </div>
     <?php
-    $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 LIMIT 1");
+    $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 ORDER BY id desc LIMIT 1");
     $query->execute();
 
     $read = $query->fetch(PDO::FETCH_ASSOC);
@@ -113,7 +113,7 @@
 
         </div>
         <?php
-        $query = $conn->prepare("SELECT products.id,products.name,products.points,products.thumbnail,products.details,users.shop FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE users.option_id = 2 AND approve = 1 LIMIT 4 OFFSET 1
+        $query = $conn->prepare("SELECT products.id,products.name,products.points,products.thumbnail,products.details,users.shop FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE users.option_id = 2 AND approve = 1 ORDER BY id desc LIMIT 4 OFFSET 1
 ");
         $query->execute();
 
@@ -160,7 +160,7 @@
 <h3>Other Offers You Might Like</h3>
 
     <?php
-    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 ");
+    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 ORDER BY id desc");
     $q3->execute();
 
     while($read = $q3->fetch(PDO::FETCH_OBJ)){

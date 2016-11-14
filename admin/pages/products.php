@@ -112,7 +112,7 @@
                                         <tbody>
 
                                         <?php
-                                        $q = $conn->prepare("SELECT * FROM products  ");
+                                        $q = $conn->prepare("SELECT * FROM products ORDER BY id desc ");
                                         $q->execute();
                                         while($row = $q->fetch(PDO::FETCH_OBJ)){
                                             ?>

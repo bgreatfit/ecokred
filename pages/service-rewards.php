@@ -79,11 +79,11 @@
                     <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
                     <?php
                     if(!isset($_GET['cat']) || empty($_GET['cat']) || intval($_GET['cat']==0)) {
-                        $q3 = $conn->prepare("SELECT * FROM services WHERE service_type='merchant' AND approve=1");
+                        $q3 = $conn->prepare("SELECT * FROM services WHERE service_type='merchant' AND approve=1 ORDER BY id desc");
                     }
                     else{
                         $cid =secureTxt($_GET['cat']);
-                        $q3 = $conn->prepare("SELECT services.id,services.name,services.points,services.thumbnail,services.price,services.details ,service_cats.service_cat_title FROM services LEFT JOIN service_cats ON services.service_cat_id=service_cats.id WHERE service_type='merchant' AND service_cat_id=:cid  AND approve = 1");
+                        $q3 = $conn->prepare("SELECT services.id,services.name,services.points,services.thumbnail,services.price,services.details ,service_cats.service_cat_title FROM services LEFT JOIN service_cats ON services.service_cat_id=service_cats.id WHERE service_type='merchant' AND service_cat_id=:cid  AND approve = 1 ORDER BY id desc");
                         $q3->bindValue(':cid',$cid);
                         $cat_name =   "<p class='heading'>Category</p>";
                     }
@@ -102,7 +102,7 @@
                                         <div class="darken"></div>
 
                                         <div class="upper-right-orange" style="text-align:right; right:0px;">
-                                            Earn <?php echo $read->points;?> EKS
+                                            For <?php echo $read->points;?> EKS
                                         </div>
                                         <img
                                             src="images/services/<?php echo $read->thumbnail;?>"

@@ -108,7 +108,7 @@
                                         <tbody>
 
                                         <?php
-                                        $q = $conn->prepare("SELECT * FROM users WHERE account = 1");
+                                        $q = $conn->prepare("SELECT * FROM users WHERE account = 1 ORDER BY id desc");
                                         $q->execute();
                                         while($row = $q->fetch(PDO::FETCH_OBJ)){
                                             ?>

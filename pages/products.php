@@ -80,11 +80,11 @@
                     <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
                     <?php
                     if(!isset($_GET['cat']) || empty($_GET['cat']) || intval($_GET['cat']==0)) {
-                        $q3 = $conn->prepare("SELECT * FROM products WHERE product_type='seller' AND approve=1");
+                        $q3 = $conn->prepare("SELECT * FROM products WHERE product_type='seller' AND approve=1 ORDER BY id desc");
                     }
                     else{
                         $cid =secureTxt($_GET['cat']);
-                        $q3 = $conn->prepare("SELECT products.id,products.name,products.points,products.thumbnail,products.price,products.details ,product_cats.product_cat_title FROM products LEFT JOIN product_cats ON products.product_cat_id=product_cats.id WHERE product_type='seller' AND product_cat_id=:cid  AND approve = 1");
+                        $q3 = $conn->prepare("SELECT products.id,products.name,products.points,products.thumbnail,products.price,products.details ,product_cats.product_cat_title FROM products LEFT JOIN product_cats ON products.product_cat_id=product_cats.id WHERE product_type='seller' AND product_cat_id=:cid  AND approve = 1 ORDER BY id desc");
                         $q3->bindValue(':cid',$cid);
                         $cat_name =   "<p class='heading'>Category</p>";
                     }

@@ -22,146 +22,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test1.php">
+      <file leaf-file-name="service-rewards.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/service-rewards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trial.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trial.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="1474" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="1686" selection-end-column="0" />
+            <state relative-caret-position="471">
+              <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
               <folding>
-                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#5;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#5;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#5;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#6;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#6;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#6;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#6;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#7;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#7;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#8;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#8;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#9;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#9;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#9;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#9;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#10;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#10;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#10;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#10;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#11;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#11;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#11;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#11;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#12;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#12;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#12;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#12;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#13;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#13;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#13;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#13;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#14;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#14;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#14;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#14;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#15;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#15;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#16;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#16;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#16;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#16;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#17;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#17;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#17;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#17;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#18;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#18;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#18;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#18;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#19;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#19;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#19;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#19;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#20;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#20;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#20;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#20;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#21;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#21;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#21;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#21;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#22;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#22;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#22;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#22;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#23;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#23;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#23;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#23;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#24;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#24;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#24;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#24;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#25;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#25;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#25;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#25;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#span#2;n#div#2;n#div#2;n#div#1;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1479153084287" expanded="true" signature="2748:2774" placeholder="SELECT * FRO... service_cats" />
+                <marker date="1479153084287" expanded="true" signature="3807:3873" placeholder="SELECT * FRO... services" />
+                <marker date="1479153084287" expanded="true" signature="3807:3890" placeholder="SELECT * FRO... services" />
+                <marker date="1479153084287" expanded="true" signature="4043:4325" placeholder="SELECT servi... services" />
+                <marker date="1479153084287" expanded="true" signature="4043:4342" placeholder="SELECT servi... services" />
+                <marker date="1479153084287" expanded="true" signature="4608:4626" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/script.php">
+      <file leaf-file-name="special-shops.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/special-shops.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="347">
+              <caret line="162" column="113" selection-start-line="162" selection-start-column="113" selection-end-line="162" selection-end-column="113" />
+              <folding>
+                <marker date="1479153084224" expanded="true" signature="1344:1383" placeholder="SELECT * FRO... sliders" />
+                <marker date="1479153084224" expanded="true" signature="2630:2725" placeholder="SELECT * FRO... products" />
+                <marker date="1479153084224" expanded="true" signature="3486:3543" placeholder="SELECT * FRO... users" />
+                <marker date="1479153084224" expanded="true" signature="3949:4087" placeholder="SELECT * FRO... products" />
+                <marker date="1479153084224" expanded="true" signature="4765:5005" placeholder="SELECT produ... products" />
+                <marker date="1479153084224" expanded="true" signature="6945:7032" placeholder="SELECT * FRO... products" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service-rewards.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/service-rewards.php">
+      <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+            <state relative-caret-position="858">
+              <caret line="86" column="343" selection-start-line="86" selection-start-column="343" selection-end-line="86" selection-end-column="343" />
               <folding>
-                <marker date="1479124528163" expanded="true" signature="2748:2774" placeholder="SELECT * FRO... service_cats" />
-                <marker date="1479124528163" expanded="true" signature="3807:3873" placeholder="SELECT * FRO... services" />
-                <marker date="1479124528163" expanded="true" signature="4026:4308" placeholder="SELECT servi... services" />
-                <marker date="1479124528163" expanded="true" signature="4574:4592" placeholder="..." />
+                <marker date="1479150295727" expanded="true" signature="2781:2807" placeholder="SELECT * FRO... product_cats" />
+                <marker date="1479150295727" expanded="true" signature="3804:3885" placeholder="SELECT * FRO... products" />
+                <marker date="1479150295727" expanded="true" signature="4038:4335" placeholder="SELECT produ... products" />
+                <marker date="1479150295727" expanded="true" signature="4601:4619" placeholder="..." />
+                <marker date="1479150295727" expanded="true" signature="5598:5655" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="85" column="343" selection-start-line="85" selection-start-column="343" selection-end-line="85" selection-end-column="343" />
+              <folding>
+                <marker date="1479150613882" expanded="true" signature="2779:2805" placeholder="SELECT * FRO... service_cats" />
+                <marker date="1479150613882" expanded="true" signature="3802:3866" placeholder="SELECT * FRO... services" />
+                <marker date="1479150613882" expanded="true" signature="3802:3883" placeholder="SELECT * FRO... services" />
+                <marker date="1479150613882" expanded="true" signature="4036:4316" placeholder="SELECT servi... services" />
+                <marker date="1479150613882" expanded="true" signature="4036:4333" placeholder="SELECT servi... services" />
+                <marker date="1479150613882" expanded="true" signature="4599:4617" placeholder="..." />
+                <marker date="1479150613882" expanded="true" signature="5595:5652" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/pages/products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1653">
+              <caret line="114" column="100" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+              <folding>
+                <marker date="1479150614147" expanded="true" signature="1221:1240" placeholder="SELECT * FRO... users" />
+                <marker date="1479150614147" expanded="true" signature="1629:1648" placeholder="SELECT * FRO... users" />
+                <marker date="1479150614147" expanded="true" signature="2550:2572" placeholder="SELECT * FRO... products" />
+                <marker date="1479150614147" expanded="true" signature="2980:3002" placeholder="SELECT * FRO... products" />
+                <marker date="1479150614147" expanded="true" signature="6170:6192" placeholder="SELECT * FRO... products" />
+                <marker date="1479150614147" expanded="true" signature="6170:6209" placeholder="SELECT * FRO... products" />
+                <marker date="1479150614147" expanded="true" signature="6665:6726" placeholder="SELECT * FRO... product_cats" />
+                <marker date="1479150614147" expanded="true" signature="6962:7017" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sellers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/pages/sellers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="110" column="115" selection-start-line="110" selection-start-column="115" selection-end-line="110" selection-end-column="115" />
+              <folding>
+                <marker date="1479150613481" expanded="true" signature="1221:1258" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613481" expanded="true" signature="1651:1688" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613481" expanded="true" signature="2590:2612" placeholder="SELECT * FRO... products" />
+                <marker date="1479150613481" expanded="true" signature="3020:3042" placeholder="SELECT * FRO... products" />
+                <marker date="1479150613481" expanded="true" signature="5323:5360" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613481" expanded="true" signature="5323:5377" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613481" expanded="true" signature="5814:5857" placeholder="SELECT optio... options" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/pages/services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="114" column="100" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+              <folding>
+                <marker date="1479150613674" expanded="true" signature="1221:1240" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613674" expanded="true" signature="1629:1648" placeholder="SELECT * FRO... users" />
+                <marker date="1479150613674" expanded="true" signature="2550:2572" placeholder="SELECT * FRO... services" />
+                <marker date="1479150613674" expanded="true" signature="2979:3001" placeholder="SELECT * FRO... services" />
+                <marker date="1479150613674" expanded="true" signature="6168:6207" placeholder="SELECT * FRO... services" />
+                <marker date="1479150613674" expanded="true" signature="6663:6724" placeholder="SELECT * FRO... service_cats" />
+                <marker date="1479150613674" expanded="true" signature="6960:7015" placeholder="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -170,28 +148,52 @@
       <file leaf-file-name="product-rewards.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product-rewards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="506">
+              <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
               <folding>
-                <marker date="1479124600930" expanded="true" signature="2749:2775" placeholder="SELECT * FRO... product_cats" />
-                <marker date="1479124600930" expanded="true" signature="3808:3874" placeholder="SELECT * FRO... products" />
-                <marker date="1479124600930" expanded="true" signature="4027:4309" placeholder="SELECT produ... products" />
-                <marker date="1479124600930" expanded="true" signature="4575:4593" placeholder="..." />
+                <marker date="1479153084256" expanded="true" signature="2749:2775" placeholder="SELECT * FRO... product_cats" />
+                <marker date="1479153084256" expanded="true" signature="3808:3891" placeholder="SELECT * FRO... products" />
+                <marker date="1479153084256" expanded="true" signature="4044:4343" placeholder="SELECT produ... products" />
+                <marker date="1479153084256" expanded="true" signature="4609:4627" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="176" column="93" selection-start-line="176" selection-start-column="93" selection-end-line="176" selection-end-column="93" />
+            <state relative-caret-position="170">
+              <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
               <folding>
                 <marker date="1479124882264" expanded="true" signature="4234:4251" placeholder="..." />
                 <marker date="1479124882264" expanded="true" signature="5440:5457" placeholder="..." />
                 <marker date="1479124882264" expanded="true" signature="6654:6671" placeholder="..." />
                 <marker date="1479124882264" expanded="true" signature="7592:7609" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <marker date="1479152839960" expanded="true" signature="874:913" placeholder="SELECT * FRO... sliders" />
+                <marker date="1479152839960" expanded="true" signature="1956:2049" placeholder="SELECT * FRO... products" />
+                <marker date="1479152839960" expanded="true" signature="1956:2050" placeholder="SELECT * FRO... products" />
+                <marker date="1479152839960" expanded="true" signature="2765:2822" placeholder="SELECT * FRO... users" />
+                <marker date="1479152839960" expanded="true" signature="3467:3560" placeholder="SELECT * FRO... services" />
+                <marker date="1479152839960" expanded="true" signature="4324:4381" placeholder="SELECT * FRO... users" />
+                <marker date="1479152839960" expanded="true" signature="5391:5462" placeholder="SELECT * FRO... products" />
+                <marker date="1479152839960" expanded="true" signature="5391:5487" placeholder="SELECT * FRO... products" />
+                <marker date="1479152839960" expanded="true" signature="7263:7334" placeholder="SELECT * FRO... services" />
+                <marker date="1479152839960" expanded="true" signature="7263:7351" placeholder="SELECT * FRO... services" />
+                <marker date="1479152839960" expanded="true" signature="8731:8869" placeholder="SELECT * FRO... products" />
+                <marker date="1479152839960" expanded="true" signature="9484:9710" placeholder="SELECT produ... products" />
               </folding>
             </state>
           </provider>
@@ -220,7 +222,6 @@
         <option value="$PROJECT_DIR$/admin/includes/header.php" />
         <option value="$PROJECT_DIR$/seller/includes/header.php" />
         <option value="$PROJECT_DIR$/pages/hot-products.php" />
-        <option value="$PROJECT_DIR$/admin/pages/products.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/db 3.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/db 4.php" />
         <option value="$PROJECT_DIR$/include/db.php" />
@@ -229,20 +230,14 @@
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/db.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/product.php" />
         <option value="$PROJECT_DIR$/seller/pages/service.php" />
-        <option value="$PROJECT_DIR$/admin/pages/services.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/home.php" />
         <option value="$PROJECT_DIR$/seller/pages/product.php" />
         <option value="$PROJECT_DIR$/pages/services-reward.php" />
-        <option value="$PROJECT_DIR$/pages/special-shops.php" />
-        <option value="$PROJECT_DIR$/pages/products.php" />
         <option value="$PROJECT_DIR$/include/header.php" />
-        <option value="$PROJECT_DIR$/pages/services.php" />
         <option value="$PROJECT_DIR$/admin/pages/add-product.php" />
         <option value="$PROJECT_DIR$/admin/pages/add-service.php" />
         <option value="$PROJECT_DIR$/include/fetch.php" />
-        <option value="$PROJECT_DIR$/admin/pages/sellers.php" />
         <option value="$PROJECT_DIR$/admin/includes/update.php" />
-        <option value="$PROJECT_DIR$/pages/home.php" />
         <option value="$PROJECT_DIR$/app.php" />
         <option value="$PROJECT_DIR$/trial.php" />
         <option value="$PROJECT_DIR$/script.php" />
@@ -255,9 +250,16 @@
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/add-product.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/header.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/home.php" />
-        <option value="$PROJECT_DIR$/pages/service-rewards.php" />
-        <option value="$PROJECT_DIR$/pages/product-rewards.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
+        <option value="$PROJECT_DIR$/pages/products.php" />
+        <option value="$PROJECT_DIR$/pages/services.php" />
+        <option value="$PROJECT_DIR$/admin/pages/products.php" />
+        <option value="$PROJECT_DIR$/admin/pages/sellers.php" />
+        <option value="$PROJECT_DIR$/admin/pages/services.php" />
+        <option value="$PROJECT_DIR$/pages/home.php" />
+        <option value="$PROJECT_DIR$/pages/product-rewards.php" />
+        <option value="$PROJECT_DIR$/pages/service-rewards.php" />
+        <option value="$PROJECT_DIR$/pages/special-shops.php" />
       </list>
     </option>
   </component>
@@ -395,24 +397,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecopoints" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecopoints" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -519,12 +503,12 @@
       <workItem from="1478307663775" duration="86476000" />
       <workItem from="1478779083104" duration="20070000" />
       <workItem from="1478856181176" duration="14740000" />
-      <workItem from="1478919065249" duration="21185000" />
+      <workItem from="1478919065249" duration="25287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266513000" />
+    <option name="totallyTimeSpent" value="270615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1362" height="728" extended-state="0" />
@@ -660,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/pages/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-1/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -685,20 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/special-shops.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2124">
-          <caret line="21" column="155" selection-start-line="21" selection-start-column="155" selection-end-line="21" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="78" column="38" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -727,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/pages/sellers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -778,38 +734,6 @@
           <folding>
             <marker date="1478540244316" expanded="true" signature="118:155" placeholder="SELECT * FRO... products" />
             <marker date="1478540244316" expanded="true" signature="627:664" placeholder="SELECT * FRO... services" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="134" selection-start-line="97" selection-start-column="134" selection-end-line="97" selection-end-column="134" />
-          <folding>
-            <marker date="1478849969010" expanded="true" signature="2779:2805" placeholder="SELECT * FRO... service_cats" />
-            <marker date="1478849969010" expanded="true" signature="3802:3866" placeholder="SELECT * FRO... services" />
-            <marker date="1478849969010" expanded="true" signature="4019:4299" placeholder="SELECT servi... services" />
-            <marker date="1478849969010" expanded="true" signature="4565:4583" placeholder="..." />
-            <marker date="1478849969010" expanded="true" signature="5561:5618" placeholder="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-470">
-          <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
-          <folding>
-            <marker date="1479124439457" expanded="true" signature="874:913" placeholder="SELECT * FRO... sliders" />
-            <marker date="1479124439457" expanded="true" signature="1963:2039" placeholder="SELECT * FRO... products" />
-            <marker date="1479124439457" expanded="true" signature="2754:2811" placeholder="SELECT * FRO... users" />
-            <marker date="1479124439457" expanded="true" signature="3181:3257" placeholder="SELECT * FRO... services" />
-            <marker date="1479124439457" expanded="true" signature="4021:4078" placeholder="SELECT * FRO... users" />
-            <marker date="1479124439457" expanded="true" signature="4983:5062" placeholder="SELECT * FRO... products" />
-            <marker date="1479124439457" expanded="true" signature="6776:6855" placeholder="SELECT * FRO... services" />
-            <marker date="1479124439457" expanded="true" signature="8345:8466" placeholder="SELECT * FRO... products" />
-            <marker date="1479124439457" expanded="true" signature="9081:9290" placeholder="SELECT produ... products" />
           </folding>
         </state>
       </provider>
@@ -943,22 +867,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/pages/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="114" column="82" selection-start-line="114" selection-start-column="82" selection-end-line="114" selection-end-column="82" />
-          <folding>
-            <marker date="1478570955292" expanded="true" signature="1221:1240" placeholder="SELECT * FRO... users" />
-            <marker date="1478570955292" expanded="true" signature="1629:1648" placeholder="SELECT * FRO... users" />
-            <marker date="1478570955292" expanded="true" signature="2550:2572" placeholder="SELECT * FRO... products" />
-            <marker date="1478570955292" expanded="true" signature="2980:3002" placeholder="SELECT * FRO... products" />
-            <marker date="1478570955292" expanded="true" signature="6170:6192" placeholder="SELECT * FRO... products" />
-            <marker date="1478570955292" expanded="true" signature="6649:6710" placeholder="SELECT * FRO... product_cats" />
-            <marker date="1478570955292" expanded="true" signature="6946:7001" placeholder="SELECT * FRO... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,41 +1038,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/service-rewards.php">
+    <entry file="file://$PROJECT_DIR$/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
           <folding>
-            <marker date="1479124528163" expanded="true" signature="2748:2774" placeholder="SELECT * FRO... service_cats" />
-            <marker date="1479124528163" expanded="true" signature="3807:3873" placeholder="SELECT * FRO... services" />
-            <marker date="1479124528163" expanded="true" signature="4026:4308" placeholder="SELECT servi... services" />
-            <marker date="1479124528163" expanded="true" signature="4574:4592" placeholder="..." />
+            <marker date="1479124882264" expanded="true" signature="4234:4251" placeholder="..." />
+            <marker date="1479124882264" expanded="true" signature="5440:5457" placeholder="..." />
+            <marker date="1479124882264" expanded="true" signature="6654:6671" placeholder="..." />
+            <marker date="1479124882264" expanded="true" signature="7592:7609" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="86" column="343" selection-start-line="86" selection-start-column="343" selection-end-line="86" selection-end-column="343" />
+          <folding>
+            <marker date="1479150295727" expanded="true" signature="2781:2807" placeholder="SELECT * FRO... product_cats" />
+            <marker date="1479150295727" expanded="true" signature="3804:3885" placeholder="SELECT * FRO... products" />
+            <marker date="1479150295727" expanded="true" signature="4038:4335" placeholder="SELECT produ... products" />
+            <marker date="1479150295727" expanded="true" signature="4601:4619" placeholder="..." />
+            <marker date="1479150295727" expanded="true" signature="5598:5655" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="85" column="343" selection-start-line="85" selection-start-column="343" selection-end-line="85" selection-end-column="343" />
+          <folding>
+            <marker date="1479150613882" expanded="true" signature="2779:2805" placeholder="SELECT * FRO... service_cats" />
+            <marker date="1479150613882" expanded="true" signature="3802:3866" placeholder="SELECT * FRO... services" />
+            <marker date="1479150613882" expanded="true" signature="3802:3883" placeholder="SELECT * FRO... services" />
+            <marker date="1479150613882" expanded="true" signature="4036:4316" placeholder="SELECT servi... services" />
+            <marker date="1479150613882" expanded="true" signature="4036:4333" placeholder="SELECT servi... services" />
+            <marker date="1479150613882" expanded="true" signature="4599:4617" placeholder="..." />
+            <marker date="1479150613882" expanded="true" signature="5595:5652" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pages/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="114" column="100" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+          <folding>
+            <marker date="1479150614147" expanded="true" signature="1221:1240" placeholder="SELECT * FRO... users" />
+            <marker date="1479150614147" expanded="true" signature="1629:1648" placeholder="SELECT * FRO... users" />
+            <marker date="1479150614147" expanded="true" signature="2550:2572" placeholder="SELECT * FRO... products" />
+            <marker date="1479150614147" expanded="true" signature="2980:3002" placeholder="SELECT * FRO... products" />
+            <marker date="1479150614147" expanded="true" signature="6170:6192" placeholder="SELECT * FRO... products" />
+            <marker date="1479150614147" expanded="true" signature="6170:6209" placeholder="SELECT * FRO... products" />
+            <marker date="1479150614147" expanded="true" signature="6665:6726" placeholder="SELECT * FRO... product_cats" />
+            <marker date="1479150614147" expanded="true" signature="6962:7017" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pages/sellers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="110" column="115" selection-start-line="110" selection-start-column="115" selection-end-line="110" selection-end-column="115" />
+          <folding>
+            <marker date="1479150613481" expanded="true" signature="1221:1258" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613481" expanded="true" signature="1651:1688" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613481" expanded="true" signature="2590:2612" placeholder="SELECT * FRO... products" />
+            <marker date="1479150613481" expanded="true" signature="3020:3042" placeholder="SELECT * FRO... products" />
+            <marker date="1479150613481" expanded="true" signature="5323:5360" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613481" expanded="true" signature="5323:5377" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613481" expanded="true" signature="5814:5857" placeholder="SELECT optio... options" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pages/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="114" column="100" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+          <folding>
+            <marker date="1479150613674" expanded="true" signature="1221:1240" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613674" expanded="true" signature="1629:1648" placeholder="SELECT * FRO... users" />
+            <marker date="1479150613674" expanded="true" signature="2550:2572" placeholder="SELECT * FRO... services" />
+            <marker date="1479150613674" expanded="true" signature="2979:3001" placeholder="SELECT * FRO... services" />
+            <marker date="1479150613674" expanded="true" signature="6168:6207" placeholder="SELECT * FRO... services" />
+            <marker date="1479150613674" expanded="true" signature="6663:6724" placeholder="SELECT * FRO... service_cats" />
+            <marker date="1479150613674" expanded="true" signature="6960:7015" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1479152839960" expanded="true" signature="874:913" placeholder="SELECT * FRO... sliders" />
+            <marker date="1479152839960" expanded="true" signature="1956:2049" placeholder="SELECT * FRO... products" />
+            <marker date="1479152839960" expanded="true" signature="1956:2050" placeholder="SELECT * FRO... products" />
+            <marker date="1479152839960" expanded="true" signature="2765:2822" placeholder="SELECT * FRO... users" />
+            <marker date="1479152839960" expanded="true" signature="3467:3560" placeholder="SELECT * FRO... services" />
+            <marker date="1479152839960" expanded="true" signature="4324:4381" placeholder="SELECT * FRO... users" />
+            <marker date="1479152839960" expanded="true" signature="5391:5462" placeholder="SELECT * FRO... products" />
+            <marker date="1479152839960" expanded="true" signature="5391:5487" placeholder="SELECT * FRO... products" />
+            <marker date="1479152839960" expanded="true" signature="7263:7334" placeholder="SELECT * FRO... services" />
+            <marker date="1479152839960" expanded="true" signature="7263:7351" placeholder="SELECT * FRO... services" />
+            <marker date="1479152839960" expanded="true" signature="8731:8869" placeholder="SELECT * FRO... products" />
+            <marker date="1479152839960" expanded="true" signature="9484:9710" placeholder="SELECT produ... products" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product-rewards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="506">
+          <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <marker date="1479124600930" expanded="true" signature="2749:2775" placeholder="SELECT * FRO... product_cats" />
-            <marker date="1479124600930" expanded="true" signature="3808:3874" placeholder="SELECT * FRO... products" />
-            <marker date="1479124600930" expanded="true" signature="4027:4309" placeholder="SELECT produ... products" />
-            <marker date="1479124600930" expanded="true" signature="4575:4593" placeholder="..." />
+            <marker date="1479153084256" expanded="true" signature="2749:2775" placeholder="SELECT * FRO... product_cats" />
+            <marker date="1479153084256" expanded="true" signature="3808:3891" placeholder="SELECT * FRO... products" />
+            <marker date="1479153084256" expanded="true" signature="4044:4343" placeholder="SELECT produ... products" />
+            <marker date="1479153084256" expanded="true" signature="4609:4627" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/footer.php">
+    <entry file="file://$PROJECT_DIR$/pages/service-rewards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="176" column="93" selection-start-line="176" selection-start-column="93" selection-end-line="176" selection-end-column="93" />
+        <state relative-caret-position="471">
+          <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
           <folding>
-            <marker date="1479124882264" expanded="true" signature="4234:4251" placeholder="..." />
-            <marker date="1479124882264" expanded="true" signature="5440:5457" placeholder="..." />
-            <marker date="1479124882264" expanded="true" signature="6654:6671" placeholder="..." />
-            <marker date="1479124882264" expanded="true" signature="7592:7609" placeholder="..." />
+            <marker date="1479153084287" expanded="true" signature="2748:2774" placeholder="SELECT * FRO... service_cats" />
+            <marker date="1479153084287" expanded="true" signature="3807:3873" placeholder="SELECT * FRO... services" />
+            <marker date="1479153084287" expanded="true" signature="3807:3890" placeholder="SELECT * FRO... services" />
+            <marker date="1479153084287" expanded="true" signature="4043:4325" placeholder="SELECT servi... services" />
+            <marker date="1479153084287" expanded="true" signature="4043:4342" placeholder="SELECT servi... services" />
+            <marker date="1479153084287" expanded="true" signature="4608:4626" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/special-shops.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="162" column="113" selection-start-line="162" selection-start-column="113" selection-end-line="162" selection-end-column="113" />
+          <folding>
+            <marker date="1479153084224" expanded="true" signature="1344:1383" placeholder="SELECT * FRO... sliders" />
+            <marker date="1479153084224" expanded="true" signature="2630:2725" placeholder="SELECT * FRO... products" />
+            <marker date="1479153084224" expanded="true" signature="3486:3543" placeholder="SELECT * FRO... users" />
+            <marker date="1479153084224" expanded="true" signature="3949:4087" placeholder="SELECT * FRO... products" />
+            <marker date="1479153084224" expanded="true" signature="4765:5005" placeholder="SELECT produ... products" />
+            <marker date="1479153084224" expanded="true" signature="6945:7032" placeholder="SELECT * FRO... products" />
           </folding>
         </state>
       </provider>

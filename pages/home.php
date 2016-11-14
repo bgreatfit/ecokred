@@ -14,7 +14,7 @@
 
         ?>
         <div data-p="225.00" style="display: none;">
-            <a href="register.php"><img data-u="image" src="images/sliders/<?php echo $read->image;?>" /></a>
+            <a href="register"><img data-u="image" src="images/sliders/<?php echo $read->image;?>" /></a>
         </div>
         <?php } ?>
     </div>
@@ -33,10 +33,10 @@
 <div class="container">
 
 <div id="cat-deals" class="module row">
-    <h3 class="greene">Earn Points</h3>
+    <h3 class="greene">Earn Eks</h3>
 
 <?php
-$q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'seller' AND approve = 1 LIMIT 4");
+$q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'seller' AND approve = 1 ORDER BY id desc LIMIT 4 ");
 $q3->execute();
 
 while($read = $q3->fetch(PDO::FETCH_OBJ)){
@@ -59,8 +59,12 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
         </div>
     </div>
 <?php }?>
+    <div class="clearfix"></div>
+    <?php if($q3->rowCount() == 4){?>
+        <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
+                class="view-text pull-right"><a href="product-rewards"> See More </a></span></div><?php }?>
     <?php
-    $q3 = $conn->prepare("SELECT * FROM services WHERE service_type = 'seller' AND approve = 1 LIMIT 4");
+    $q3 = $conn->prepare("SELECT * FROM services WHERE service_type = 'seller' AND approve = 1 ORDER BY id desc LIMIT 4");
     $q3->execute();
 
     while($read = $q3->fetch(PDO::FETCH_OBJ)){
@@ -83,9 +87,10 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
             </div>
         </div>
     <?php }?>
+    <div class="clearfix"></div>
     <?php if($q3->rowCount() == 4){?>
         <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
-                class="view-text pull-right"><a href="products"> See More </a></span></div><?php }?>
+                class="view-text pull-right"><a href="product-rewards"> See More </a></span></div><?php }?>
 
 </div>
 
@@ -94,7 +99,7 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
         <div class="all-product-items col-md-12 col-xs-12 mb"><div id="ps-loading-bk" style=" display: none;"></div>
             <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
             <?php
-            $q3 = $conn->prepare("SELECT * FROM products WHERE  product_type = 'merchant' AND approve = 1");
+            $q3 = $conn->prepare("SELECT * FROM products WHERE  product_type = 'merchant' AND approve = 1 ORDER BY id desc LIMIT 4 ");
             $q3->execute();
 
 
@@ -142,7 +147,7 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
     <div class=" col-md-12 col-xs-12 mb"><div id="ps-loading-bk" style=" display: none;"></div>
         <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
         <?php
-        $q3 = $conn->prepare("SELECT * FROM services WHERE  service_type = 'merchant' AND approve = 1 ");
+        $q3 = $conn->prepare("SELECT * FROM services WHERE  service_type = 'merchant' AND approve = 1 ORDER BY id desc ");
         $q3->execute();
 
 
@@ -184,7 +189,7 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
                 class="view-text pull-right"><a href="service-rewards"> See More </a></span></div><?php }?>
 </div>
     <?php
-    $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 LIMIT 1");
+    $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 ORDER BY id desc LIMIT 1");
     $query->execute();
 
  $read = $query->fetch(PDO::FETCH_ASSOC);
@@ -209,7 +214,7 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
 
     </div>
 <?php
-    $query = $conn->prepare("SELECT products.id,products.points,products.thumbnail,products.details,users.shop FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE users.option_id = 2 AND approve = 1 LIMIT 4 OFFSET 1
+    $query = $conn->prepare("SELECT products.id,products.points,products.thumbnail,products.details,users.shop FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE users.option_id = 2 AND approve = 1 ORDER BY id desc LIMIT 4 OFFSET 1
 ");
     $query->execute();
 
