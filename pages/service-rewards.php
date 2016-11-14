@@ -68,7 +68,7 @@
                             while($read = $q3->fetch(PDO::FETCH_OBJ)){
 
                                 ?>
-                                <li style="font-family: 'LLBrownWeb-Regular',Verdana,sans-serif"><a style="<?php if(isset($_GET['cat']) AND $_GET['cat']== $read->id)echo 'color:#009426;font-weight:bold'?>" href="services?cat=<?php echo $read->id?>" data-id="1" data-href="/local-deals?cat=1"><?php echo $read->service_cat_title?></a></li>
+                                <li style="font-family: 'LLBrownWeb-Regular',Verdana,sans-serif"><a style="<?php if(isset($_GET['cat']) AND $_GET['cat']== $read->id)echo 'color:#009426;font-weight:bold'?>" href="service-rewards?cat=<?php echo $read->id?>" data-id="1" data-href="/local-deals?cat=1"><?php echo $read->service_cat_title?></a></li>
                             <?php } ?>
                         </ul>
 
