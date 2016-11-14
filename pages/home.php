@@ -83,70 +83,73 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
             </div>
         </div>
     <?php }?>
-    <?php if($q3->rowCount() == 8){?>
+    <?php if($q3->rowCount() == 4){?>
         <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
                 class="view-text pull-right"><a href="products"> See More </a></span></div><?php }?>
-    <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
-            class="view-text pull-right"><a href="products"> See More </a></span></div>
+
 </div>
 
-<div class="module row">
-    <h3 class="greene">Buy These Products With Eks
+ <div class="module row">
+        <h3 class="greene" >Buy Theses Products with Eks  </h3>
+        <div class="all-product-items col-md-12 col-xs-12 mb"><div id="ps-loading-bk" style=" display: none;"></div>
+            <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
+            <?php
+            $q3 = $conn->prepare("SELECT * FROM products WHERE  product_type = 'merchant' AND approve = 1");
+            $q3->execute();
 
-    </h3>
 
-    <?php
-    $q3 = $conn->prepare("SELECT * FROM products  WHERE product_type = 'merchant' AND approve = 1 LIMIT 3");
-    $q3->execute();
+            while($read = $q3->fetch(PDO::FETCH_OBJ)){
 
-    while($read = $q3->fetch(PDO::FETCH_OBJ)){
+                ?>
+                <div class="col-md-3 col-xs-6 deals mb" id="deal_1" data-set="local">
+                    <div class="product-tile">
+                        <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="merProd product-link">
 
-        ?>
-    <div class="mb col-md-4 col-sm-6 col-xs-12 store-tile-extended">
-        <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="merProd product-link"?>"
-           class="storeClick" data-ocid="" data-brand="Symantec" data-list="HP Promo" data-pos="1"
-           data-package="" data-points="5 Points per dollar">
-            <div class="store-tile bg-Symantec col-xs-6 " style="padding: 0;">
-                <span class="icon-tag-sprite icon-tag"></span>
 
-                <div class="darken"></div>
-                <img src="images/products/<?php echo $read->thumbnail;?>" class="img-responsive"/>
-            </div>
+                            <div class="product-img">
+                                <div class="darken"></div>
 
-            <div class="col-xs-6 store-tile-text">
-                <p>
-                    <span class="promo-pts"> <?php echo $read->points;?> EKS/&#x20A6;</span>
-                </p>
+                                <div class="upper-right-orange" style="text-align:right; right:0px;">
+                                    For <?php echo $read->points;?> EKS
+                                </div>
+                                <img
+                                    src="images/products/<?php echo $read->thumbnail;?>"
+                                    class="img-responsive pr-img"/>
+                            </div>
 
-                <p class="offer-text">
-                    <?php echo $read->details;?>
-                </p>
-            </div>
-        </a>
+                        </a>
+
+
+
+                        <p class="product-details">
+                        </p>
+                    </div>
+
+                </div>
+            <?php } ?>
+
+        </div>
+
+        <div class="clearfix"></div>
+     <?php if($q3->rowCount() == 4){?>
+         <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
+                 class="view-text pull-right"><a href="product-rewards"> See More </a></span></div><?php }?>
     </div>
-    <?php }?>
-    <?php if($q3->rowCount() == 4){?>
-    <div class="clearfix"></div>
-    <div class="see-more " data-target="favorite-stores"><span class="pull-right caret"></span><span
-            class="view-text pull-right">See More </span></div>
-</div>
-    <?php }?>
 
-</div>
 
 <div class="module row">
 <h3 class="greene" >Use Your Eks For These Services  </h3>
-    <div class="all-product-items col-md-9 col-xs-12 mb"><div id="ps-loading-bk" style=" display: none;"></div>
+    <div class=" col-md-12 col-xs-12 mb"><div id="ps-loading-bk" style=" display: none;"></div>
         <div id="ps-loading-img" style="display: none;"><img src="/img/ajax_loader.gif?v=c5fd16e"></div>
         <?php
-        $q3 = $conn->prepare("SELECT * FROM services WHERE  service_type = 'merchant' AND approve = 1 LIMIT 4");
+        $q3 = $conn->prepare("SELECT * FROM services WHERE  service_type = 'merchant' AND approve = 1 ");
         $q3->execute();
 
 
         while($read = $q3->fetch(PDO::FETCH_OBJ)){
 
             ?>
-            <div class="col-md-4 col-xs-6 deals mb" id="deal_1" data-set="local">
+            <div class="col-md-3 col-xs-6 deals mb" id="deal_1" data-set="local">
                 <div class="product-tile">
                     <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="merSer product-link">
 
@@ -155,7 +158,7 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
                             <div class="darken"></div>
 
                             <div class="upper-right-orange" style="text-align:right; right:0px;">
-                                Earn <?php echo $read->points;?> EKS
+                                For <?php echo $read->points;?> EKS
                             </div>
                             <img
                                 src="images/services/<?php echo $read->thumbnail;?>"
@@ -176,8 +179,9 @@ while($read = $q3->fetch(PDO::FETCH_OBJ)){
     </div>
 
 <div class="clearfix"></div>
-<div class="see-more " data-target="favorite-stores"><span class="pull-right caret"></span><span
-            class="view-text pull-right">See More </span></div>
+    <?php if($q3->rowCount() == 4){?>
+        <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
+                class="view-text pull-right"><a href="service-rewards"> See More </a></span></div><?php }?>
 </div>
     <?php
     $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 LIMIT 1");
