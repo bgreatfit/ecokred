@@ -154,9 +154,9 @@
               if(resp.status == 200){
                   $('#infoModal').modal('show');
                   $('.modal-title').html(title);
-                  var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/services/'+resp.data.picture+'" class=""></div>'+
+                  var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/products/'+resp.data.picture+'" class=""></div>'+
                       '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
-                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Reedeem</a><h3>'+resp.data.points+'eks</h3></div>';
+                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
               }
@@ -174,7 +174,7 @@
                   $('.modal-title').html(title);
                   var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/services/'+resp.data.picture+'" class=""></div>'+
                       '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
-                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Reedeem</a><h3>'+resp.data.points+'eks</h3></div>';
+                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
               }
