@@ -1,23 +1,36 @@
-<?php require_once "include/header.php"?>
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-          <?php
-             for($i =0;$i<5; $i++){
-                 echo "<H1>Hello</H1>";
-             }
-             
-          ?>
-             <?php
-             for($i =0;$i<5; $i++){
-                 echo "<H1>Hello</H1>";
-             }
-             
-          ?>
-          <?php echo "hello World"?>
-            <?php echo "hello World"?>
+            <p>hello</p>
+            <form id ="hello" action="" class="horizontal">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control">
+                </div>
 
+                    <button type="submit" class="btn btn-primary btn-block btn-reg btn-lg" style="border-radius:0px !important;">Register</button>
+
+            </form>
+          
         </div>
     </div>
 </div>
-<?php require_once "include/footer.php"?>
+
+<script>
+    $(document).ready(function (e) {
+        event.preventDefault();
+        $("#hello").submit(function () {
+            $(".btn-reg").prop("disabled", true).html("<i class='fa fa-repeat fa-spin'></i> Processing...").fadeOut(1000);
+
+        });
+    });
+
+</script>
