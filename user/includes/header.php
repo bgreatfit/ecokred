@@ -67,6 +67,7 @@ if(!$_SESSION['user']){
  
  
 <ul class="nav sidebar-menu">
+    
 <li class="<?php if($page == 'home'){ echo "active";}?>">
 <a href="home">
 <span class="sidebar-title">Dashboards</span>

@@ -24,6 +24,9 @@
     <link href="css/bootstrap-drawer.min.css" rel="stylesheet">
     <link href="css/style_joo.css" rel="stylesheet">
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
 
@@ -120,7 +123,15 @@
            
             <ul class="nav navbar-nav navbar-left pull-right hidden-md hidden-lg">
                 <li style="float:right;"><a class="navbar-right pull-right nav-join bannerNonAuthLanding" href="register" data-toggle="modal" data-target="#joinModal">Join Now</a></li>
-                <li style="float:right;"><a class="navbar-right pull-right" href="login" class="loginModal" data-onok="#" >Sign In</a></li>
+                <?php if(isset($_SESSION['user'])){?>
+                    <li style="float:right;"><a class="navbar-right pull-right" href="user/home" class="loginModal" data-onok="#" >My Account </a></li>
+                <?php }else if(isset($_SESSION['shop'])){?>
+                <li style="float:right;"><a class="navbar-right pull-right" href="seller/dashboard" class="loginModal" data-onok="#" >My Account </a></li>
+                <?php }else{ ?>
+                    <li class="hidden-sm hidden-md hidden-lg"><a href="login">Sign In</a></li>
+
+                <?php }?>
+
             </ul>
         </div><!--.navbar-header-->
         <div class="navbar-collapse collapse">
@@ -130,14 +141,12 @@
                     <ul class="dropdown-menu">
                         <li><a href="special-shops">Special Shops</a></li>
                         <li><a href="products">Products</a></li>
-                        <li><a href="products">Services</a></li>
+                        <li><a href="services">Services</a></li>
                     </ul>
                 </li>
                 <li class="dropdown <?php if($_GET['page']=='hot-products' || $_GET['page']=='refer-a-friend'){echo 'active';}?>">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hot Promos<span class="caret hidden-md hidden-lg"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="hot-products">Hot Products</a></li>
-                    </ul>
+                    <a href="hot-promos">Hot Promos</a>
+
                 </li>
                 <li class="dropdown <?php if($_GET['page']=='product-rewards' || $_GET['page']=='service-rewards'){echo 'active';}?>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rewards<span class="caret hidden-md hidden-lg"></span></a>
@@ -149,28 +158,43 @@
                 <li class="dropdown ">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Partners <span class="caret hidden-md hidden-lg"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="where-earn">Where To Earn Points</a></li>
-                        <li><a href="where-redeem">Where To Redeem Points</a></li>
+<!--                        <li><a href="partners">Partners</a></li>-->
+                         <li><a href="where-earn">Where To Earn Points</a></li>
                     </ul>
                 </li>
 
-                <li	class="hidden-md hidden-lg">
-                    <a href="#" target="_blank">Help</a>
-                </li>
-                <li class="hidden-xs hidden-md hidden-lg"><a href="login" class="loginModal" data-onok="">Sign In</a></li>
-                <li class="hidden-sm hidden-md hidden-lg"><a href="login">Sign In</a></li>
+<!--                <li	class="hidden-md hidden-lg">-->
+<!--                    <a href="#" target="_blank">Help</a>-->
+<!--                </li>-->
+                <?php if(isset($_SESSION['user'])){?>
+
+                <li class="hidden-xs hidden-md hidden-lg"><a href="user/home" class="loginModal" data-onok="">My Account </a></li>
+                <?php }else if(isset($_SESSION['shop'])){?>
+                <li class="hidden-sm hidden-md hidden-lg"><a href="seller/dashboard">My Account</a></li>
+                <?php }else{ ?>
+                    <li class="hidden-sm hidden-md hidden-lg"><a href="login">Sign In</a></li>
+
+                <?php }?>
+
                 <li class="hidden-md hidden-lg"><a class="bannerNonAuthLanding" href="register">Join Now</a></li>
             </ul>
 
             <form class="navbar-form search navbar-left hidden-sm hidden-xs" ng-submit="searchHandler.handleSearch()" role="search">
-                <i class="glyphicon glyphicon-search glyph-flip"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" class="typeahead" placeholder="Search" id="main-search" name="kw" autocomplete="off" required="true" ng-model="searchHandler.kw" /><!--IMPORTANT #main-search is used in js dont change -->
                 <input type="submit" value="Submit" class="invisible_btn"/>
                 <a class="clear-text" data-target="#main-search">&times;</a>
             </form>
 
             <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                <?php if(isset($_SESSION['user'])){?>
+                <li><a href="user/home" class="loginModal" data-onok="">My Account</a></li>
+                <?php }else if(isset($_SESSION['shop'])){?>
+                    <li><a href="seller/dashboard" class="loginModal" data-onok="">My Account</a></li>
+                <?php }else{ ?>
                 <li><a href="login" class="loginModal" data-onok="">Sign In</a></li>
+                <?php }?>
+
                 <li class="nav-join"><a class="bannerNonAuthLanding" href="register">Join Now</a></li>
             </ul>
         </div><!--.collapse navbar-collapse-->

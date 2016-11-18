@@ -2,7 +2,8 @@
 include ('includes/db.php');
 if($_GET['page'] != ''){
     $pages = array("dashboard","login", "sellers","security","contact","logout","products","add-seller","add-product","sliders","services","add-service");
-        if(in_array($_GET['page'], $pages)){
+
+    if(in_array($_GET['page'], $pages)){
             $page = $_GET['page'];
         }else{
             $page="404";
@@ -17,9 +18,10 @@ if($page == "login"){
     else if($page == "register"){
     require('pages/'.$page.'.php');
     }else{
-         include('includes/header.php');
- require('pages/'.$page.'.php');
-include('includes/footer.php');  
+        include ('includes/header.php');
+        include ('pages/'.$_GET['page'].'.php');
+        include ('includes/footer.php');
+
 
     }
 

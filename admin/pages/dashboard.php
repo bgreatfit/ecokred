@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="col-xs-7 pl35 text-center">
                                     <h2 class=""><?php
-                                        $q2 =  $conn->query("SELECT * FROM users")->rowCount();
+                                        $q2 =  $conn->query("SELECT * FROM users WHERE account= 2")->rowCount();
                                         echo $q2;
                                         ?></h2>
                                     <h6>Total Users</h6>
@@ -44,7 +44,7 @@
                                 <div class="col-sm-12">
                                     <div class="info-block-stat">
 <span>Users As At Today - <?php
-    $q3 =  $conn->query("SELECT * FROM users")->rowCount();
+    $q3 =  $conn->query("SELECT * FROM users WHERE account= 2")->rowCount();
     echo $q3;
     ?></span>
                                         <span class=""></span>
@@ -54,6 +54,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6 col-xl-3">
+                                    <div class="panel panel-tile info-block info-block-bg-info">
+                                        <div class="panel-body">
+                                            <div class="row">
+
+                                                <div class="col-xs-5 ph10 text-center">
+                                                    <i class="imoon imoon-users2"></i>
+                                                </div>
+                                                <div class="col-xs-7 pl35 text-center">
+                                                    <h2 class=""><?php
+                                                        $q2 =  $conn->query("SELECT * FROM users WHERE account= 1")->rowCount();
+                                                        echo $q2;
+                                                        ?></h2>
+                                                    <h6>Total Sellers</h6>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="info-block-stat">
+                <span>Sellers As At Today - <?php
+                    $q3 =  $conn->query("SELECT * FROM users WHERE account= 1")->rowCount();
+                    echo $q3;
+                    ?></span>
+                                                        <span class=""></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                 <div class="col-sm-6 col-xl-3">
                     <div class="panel panel-tile info-block info-block-bg-system">
@@ -83,6 +111,34 @@
                         </div>
                     </div>
                 </div>
+                 <div class="col-sm-6 col-xl-3">
+                                    <div class="panel panel-tile info-block info-block-bg-system">
+                                        <div class="panel-body">
+                                            <div class="row">
+
+                                                <div class="col-xs-5 ph10 text-center">
+                                                    <i class="fa fa-cloud-upload"></i>
+                                                </div>
+                                                <div class="col-xs-7 pl35 text-center">
+                                                    <h2 class=""><?php
+                                                        $q =  $conn->query("SELECT * FROM services")->rowCount();
+                                                        echo $q;
+                                                        ?></h2>
+                                                    <h6 class="text-muted">Total Services</h6>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="info-block-stat">
+                <span>Current services - <?php
+                    $q =  $conn->query("SELECT * FROM services")->rowCount();
+                    echo $q;
+                    ?></span>
+                                                        <span class=""></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
     </section>

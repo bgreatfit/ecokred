@@ -68,7 +68,7 @@ if($_SESSION['admin']){
 
                                         <div class="row">
 
-                                            <div class="col-md-7 mb10 col-sm-6 col-xs-12">
+                                            <div class="col-md-6 mb10 col-sm-6 col-xs-12">
 
                                                 <form id="productForm" class="form" action="" method="POST" enctype="multipart/form-data">
                                                     <div class="form-group earn-info">
@@ -95,9 +95,6 @@ if($_SESSION['admin']){
                                                                     <?php
                                                                 }else{
                                                                     if(move_uploaded_file($_FILES['pics']['tmp_name'], $target_file)){
-                                                                        function rand_string() {
-                                                                            return  substr(str_shuffle("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"), -8);
-                                                                        }
                                                                         $q12 = $conn->prepare("INSERT INTO products(name,manufacturer_id,thumbnail,details,points,timestamp,product_cat_id,product_type,approve) VALUES(:name,:man,:tmb,:det,:pts,:time,:product_cat_id,'merchant',0)");
                                                                         $q12->bindValue(':name', $name);
                                                                         $q12->bindValue(':man', $read['id']);
@@ -161,32 +158,41 @@ if($_SESSION['admin']){
                                                 </form>
 
                                             </div>
-                                            <div class="col-md-5 col-xs-12 col-sm-6 hidden-xs">
-
-                                                <div class="mw400 ml70 " style="height:680px;margin-top:40px;overflow-y:scroll;overflow-x:auto">
-                                                    <?php
-                                                    $p = $conn->prepare("SELECT * FROM products WHERE manufacturer_id = :uv ORDER BY id DESC");
-                                                    $p->bindValue(":uv", $read['id']);
-                                                    $p->execute();
-                                                    while($row = $p->fetch()){
-                                                        ?>
-                                                        <div class="mb20 fs13">
-                                                            <div class="media">
-                                                                <div class="media-left">
-                                                                    <img src="../images/products/<?php echo $row['thumbnail'];?>" width="50" class="media-object img-thumbnail img-rounded">
-                                                                </div>
-                                                                <div class="media-body">
-                                                                    <h6 class="media-heading ml2 mb7 fs16 fw600"><?php echo $row['name'];?> <br><small class="text-info" style="font-size:10px;"><?php echo timeAgo($row['timestamp']);?></small></h6>
-                                                                    <p><?php if($row['status'] == 0){?><span class="" style=""><?php echo $row['product_code'];?></span><?php }else{?><span class="text-warning" style="text-decoration:line-through"><?php echo $row['product_code'];?></span><?php }?> / <small class="">₦<?php echo number_format($row['price']);?></small> / <small class="text-info"><?php echo number_format($row['points']);?> pts</small></p>
-                                                                    <p>
-                                                                        <a href="javascript:;" class="btn btn-xs btnDel" id="<?php echo $row['id'];?>" ><i class="fa fa-trash"></i></a>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <hr/>
-                                                    <?php } ?>
+                                            <div class="col-md-6 col-xs-12 col-sm-6 ">
+                                                <div class='alert alert-success'>
+                                                    <i class='fa fa-check'></i> <p></p> <button class='close' data-dismiss='alert'>&times;</button>
                                                 </div>
+                                                <div  style="border: 1px solid #939393 ;">
+                                                    <div class="well">
+                                                        <div class="panel-heading">
+                                                            Products Settings
+                                                        </div>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                                <form class="form-inline" method="post" id="prodCat" action="includes/insert-cat.php">
+                                                                    <div class="form-group">
+                                                                        <input name="cat" type="text" class="form-control"  placeholder="Category Name">
+                                                                    </div>
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" name="visible" value="1"> Set visibility
+                                                                        </label>
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-primary prod-cat"><span class="glyphicon glyphicon-plus"></span>Add</button>
+                                                                </form>
+
+                                                                <br>
+                                                                <br>
+                                                                <div class='alert alert-info'>
+                                                                Note<i class='fa fa-info'></i> if Visibility is Set, sellers would see this category
+                                                                <button class='close' data-dismiss='alert'>&times;</button>
+                                                            </div>
+
+                                                        </div>
+                                                </div>
+
+                                            </div>
+
 
 
                                             </div>
@@ -205,3 +211,23 @@ if($_SESSION['admin']){
     exit(header('location:/'));
 }	?>
  
+<script>
+    $('#prodCat').submit(function (event) {
+        event.preventDefault();
+       var url= $(this).attr('action');
+        var dat = $(this).serialize();
+        $.json(url,dat,function (resp) {
+            if(resp.status==200)
+            {
+                $('#prodCat')[0].reset();
+                $('.alert p').html('Category Added').fadeIn(1000);
+            }
+            else{
+                
+            }
+
+
+        });
+
+    })
+</script>

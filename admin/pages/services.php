@@ -103,6 +103,7 @@
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Service</th>
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Category</th>
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Type</th>
+                                            <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Option</th>
                                             <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Address line: activate to sort column ascending" style="width: 145px;">Seller</th>
                                             <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="City: activate to sort column ascending" style="width: 103px;">Contact</th>
                                             <th class="hidden-xs va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="State: activate to sort column ascending" style="width: 39px;">Eks</th>
@@ -120,6 +121,7 @@
                                                 <td class="sorting_1"><?php echo $row->name;?></td>
                                                 <td class="sorting_1"><?php $q1 = $conn->query("SELECT * FROM service_cats WHERE id=".$row->service_cat_id."")->fetch(); echo $q1['service_cat_title'];?></td>
                                                 <td class="sorting_1"><?php echo $row->service_type;?></td>
+                                                <td class="sorting_1"><?php echo $row->service_option;?></td>
                                                 <td><?php $q1 = $conn->query("SELECT * FROM users WHERE id=".$row->manufacturer_id."")->fetch(); echo $q1['shop'];?></td>
                                                 <td><?php echo $q1['phone'];?><br/><?php echo $q1['email'];?></td>
                                                 <td class="hidden-xs"><?php echo $row->points;?></td>

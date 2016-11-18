@@ -117,7 +117,6 @@
 			if(resp.status == 200){
 				var info ='<div class="row"><div class="col-sm-7 text-left"><form id="sellerForm" method="post" action="includes/update.php">'+
 					'<p>Seller<br/><input type="text"  name="seller" class="form-control" value="'+resp.data.shop+'"></p>'+
-					'<p>Option<br/><select name="seller_option" class="form-control"><option value="featured">Select</option><option value="promo">Promo</option><option value="featured">Featured</option></select>'+
 					'<input type="hidden" value="'+id+'" name="id"></p>'+
 					'<p><input type="hidden" value="update-seller" name="update"></p>'+
 					'<p><button type="submit" id="submit" class="btn btn-info btn-block" >Edit</button></form></p>';
@@ -133,7 +132,7 @@
 						if(res.status == 200){
 							location.reload(true);
 						}else{
-
+							alert(res.message);
 							$('#submit').prop('disabled', false).html('Edit');
 
 						}
@@ -161,13 +160,9 @@ $('.edit').click(function(e){
 	
 	$.getJSON(url,data,function(resp){
             if(resp.status == 200){
-				var info = '<div class="row"><div class="col-sm-4 mr30" ><img width="200" class="img-thumbnail img-rounded" src="../images/products/'+resp.data.picture+'"><br><br/><p class="lead">'+resp.data.name+'</p></div>'+
-				'<div class="col-sm-7 text-left"><form id="editForm" method="post" enctype="multipart/form-data" action="includes/update.php"><p>Details<br/><textarea class="form-control" name="details">'+resp.data.details+'</textarea></p>'+
+				var info = '<div class="row"><div class="col-sm-4 mr30" ><img width="200" class="img-thumbnail img-rounded" src="../images/products/'+resp.data.picture+'"><br/><br/><p class="lead">'+resp.data.name+'</p></div>'+
+				'<div class="col-sm-7 text-left"><form id="editForm" method="post" action="includes/update.php"><p>Details<br/><textarea class="form-control" name="details">'+resp.data.details+'</textarea></p>'+
 				'<p>Price<br/><input type="number" min="0" name="price" class="form-control" value="'+resp.data.price+'"></p>'+
-				'<p>Option<br/><select name="product_option" class="form-control"><option value="">Select Option</option><option value="promo">Promo</option><option value="featured">Featured</option>' +
-				'<option value="christmas">Christmas</option><option value="wedding">Wedding</option><option value="babies">Babies</option></select>'+
-				'<p  style="font-weight: bold;font-style: italic";>Set as Featured image[min-height:600px]</p>' +
-				'<input type="checkbox" value="1" name="featured"> ON <input type="checkbox" value="0" name="featured">OFF</p>'+
 				'<p>Eks<br/><input type="number" min="0" name="points" class="form-control" value="'+resp.data.points+'"><input type="hidden" value="'+id+'" name="id"></p>'+
 				'<p><input type="hidden" value="'+id+'" name="id"></p>'+
 				'<p><input type="hidden" value="update-product" name="update"></p>'+
@@ -210,11 +205,11 @@ $('.edit').click(function(e){
 
 		$.getJSON(url,data,function(resp){
 			if(resp.status == 200){
-				var info = '<div class="row"><div class="col-sm-4 mr30" ><img width="200" class="img-thumbnail img-rounded" src="../images/services/'+resp.data.picture+'"><br/><br/><p class="lead">'+resp.data.name+'</p></div>'+
+				var info = '<div class="row"><div class="col-sm-4 mr30" ><img width="200" class="img-thumbnail img-rounded" src="../images/services/' +
+					''+resp.data.picture+'"><br/><br/><p class="lead">'+resp.data.name+'</p></div>'+
 					'<div class="col-sm-7 text-left"><form id="editForm" method="post" action="includes/update.php"><p>Details<br/><textarea class="form-control" name="details">'+resp.data.details+'</textarea></p>'+
 					'<p>Price<br/><input type="number" min="0" name="price" class="form-control" value="'+resp.data.price+'"></p>'+
 					'<p>Eks<br/><input type="number" min="0" name="points" class="form-control" value="'+resp.data.points+'"><input type="hidden" value="'+id+'" name="id"></p>'+
-					'<p>Option<br/><select name="service_option" class="form-control"><option value="">Select</option><option value="promo">Promo</option><option value="featured">Featured</option></select>'+
 					'<input type="hidden" value="'+id+'" name="id"></p>'+
 					'<p><input type="hidden" value="update-service" name="update"></p>'+
 					'<p><button type="submit" id="submit" class="btn btn-info btn-block" >Edit</button></form></p>';
@@ -332,9 +327,9 @@ $('.delSlider').click(function(e){
     });
 
 	/**********************************************************************************************************************/
-	/************************************************ Delete User/Seller***********************************************************/
+	/************************************************ Delete User ***********************************************************/
 	/**********************************************************************************************************************/
-	$('.delSeller').click(function(e){
+	$('.delUser').click(function(e){
         e.preventDefault();
 		var id = $(this).attr('id');
 		var url = "includes/delete.php";

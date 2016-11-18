@@ -95,10 +95,8 @@
 
 .product-tile div.darken { opacity: 0.1; padding-bottom: 75%; box-sizing:content-box; }
 .product-tile:hover div.darken { background-color: #000; opacity: 0.2; }
-.product-tile .member-picks-icon { position:absolute; width:40%; height:55px; background:url('../../../md5/53/5346484902e3d39fee7f713534519ace_member_picks.png'); background-size:contain; background-repeat:no-repeat; }
-.product-tile .member-picks-icon:hover { background:url('../../../md5/3a/3ac1115f6533717a4e0c989789d8f8d2_member_picks_hover.png'); background-size:contain; background-repeat:no-repeat; }
 
-div.hp-deal-banner { border-top: 1px solid #fff; bottom: 0; color: #fff; font-size: 75%; height: 30%; padding: 5px; position: absolute; width: 100%;}
+div.hp-deal-banner { border-top: 1px solid #fff; bottom: 0; color: #fff; font-size: 75%; height: 40%; padding: 5px; position: absolute; width: 100%;}
 @media (max-width: 359px) {
 	div.hp-deal-banner { font-size : 50%;}
 }

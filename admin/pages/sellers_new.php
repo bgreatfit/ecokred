@@ -101,7 +101,7 @@
                                         <thead>
                                         <tr role="row">
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Seller</th>
-                                            <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Address line: activate to sort column ascending" style="width: 145px;">Seller Option</th>
+                                            <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Address line: activate to sort column ascending" style="width: 145px;">Seller Type</th>
                                             <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="City: activate to sort column ascending" style="width: 103px;">Contact</th>
                                             <th class="hidden-xs va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Phone: activate to sort column ascending" style="width: 88px;">Action</th>
                                         </thead>
@@ -114,13 +114,12 @@
                                             ?>
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1"><?php echo $row->shop;?></td>
-                                                <td><?php echo $row->seller_option;?></td>
+                                                <td><?php $q1 = $conn->query("SELECT option_type FROM options WHERE id = $row->option_id")->fetch(); echo $q1['option_type'];?></td>
                                                 <td><?php echo $row->phone;?><br/><?php echo $row->email;?></td>
                                                 <td class="hidden-xs">
-                        <span class="">
-                        <a href="javascript:;" class="editSeller" id="<?php echo $row->id;?>" Title="Edit"><i class="fa fa-edit"></i></a>
-                        <a href="javascript:;" class="delSeller text-primary" id="<?php echo $row->id;?>" title="Delete"><i class="fa fa-trash"></i></a>
-                        &nbsp;&nbsp;
+<span class="">
+<a href="javascript:;" class="delUser text-primary" id="<?php echo $row->id;?>" title="Delete"><i class="fa fa-trash"></i></a>
+&nbsp;&nbsp;
 
                                                 </td>
                                             </tr>

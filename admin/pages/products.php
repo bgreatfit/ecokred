@@ -103,6 +103,7 @@
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Product</th>
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Category</th>
                                             <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 114px;">Type</th>
+                                            <th class="va-m sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 39px;">Option</th>
                                             <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Address line: activate to sort column ascending" style="width: 145px;">Seller</th>
                                             <th class="va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="City: activate to sort column ascending" style="width: 103px;">Contact</th>
                                             <th class="hidden-xs va-m sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="State: activate to sort column ascending" style="width: 39px;">Eks</th>
@@ -115,14 +116,18 @@
                                         $q = $conn->prepare("SELECT * FROM products ORDER BY id desc ");
                                         $q->execute();
                                         while($row = $q->fetch(PDO::FETCH_OBJ)){
+                                            $product_type=$row->product_type;
+                                            $id=$row->id;
                                             ?>
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1"><?php echo $row->name;?></td>
                                                 <td class="sorting_1"><?php $q1 = $conn->query("SELECT * FROM product_cats WHERE id=".$row->product_cat_id."")->fetch(); echo $q1['product_cat_title'];?></td>
-                                                <td class="sorting_1"><?php echo $row->product_type;?></td>
+                                                <td class="sorting_1"><?php echo $product_type;?></td>
+                                                <td class="sorting_1"><?php echo $row->product_option;?></td>
                                                 <td><?php $q1 = $conn->query("SELECT * FROM users WHERE id=".$row->manufacturer_id."")->fetch(); echo $q1['shop'];?></td>
                                                 <td><?php echo $q1['phone'];?><br/><?php echo $q1['email'];?></td>
                                                 <td class="hidden-xs"><?php echo $row->points;?></td>
+
                                                 <td class="hidden-xs">
 <span class="">
 <a href="javascript:;" class="edit" id="<?php echo $row->id;?>" Title="Edit"><i class="fa fa-edit"></i></a>

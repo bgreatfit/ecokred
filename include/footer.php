@@ -1,4 +1,4 @@
-  <!-- Info Modal -->
+﻿  <!-- Info Modal -->
  <div id="infoModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -60,7 +60,7 @@
                     <div class="">
                         <h6>CONTACT US</h6>
                         <ul>
-                            <li>9, Allen Avenue</li>
+                            <li>48, Allen Avenue</li>
                             <li>Ikeja, Lagos</li>
                             <li><a href="#">Contact Member Services </a></li>
                         </ul>
@@ -115,10 +115,8 @@
                   $('#infoModal').modal('show');
                   $('.modal-title').html(title);
                   var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/products/'+resp.data.picture+'" class=""></div>'+
-                      '<div class="col-md-3 text-center"><h4><i class="fa fa-info-circle"></i> Seller-Info</h4><p>'+resp.data.seller+'<br/>'+
-                      ''+resp.data.selleradd+' '+resp.data.sellercity+'<br/>'+resp.data.sellerphone+'</p></div>'+
-                      '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
-                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Buy</a><h3>₦'+resp.data.price+'/'+resp.data.points+'eks</h3></div>';
+                      '<div class="col-md-6 text-center"><h4><i class="zmdi zmdi-info-outline"></i> Description</h4><p>'+resp.data.details+'</p>'+
+                      '</div><div class="col-md-12 text-center"><a href="checkout?okay='+id+'" class="btn btn-success"><i class="zmdi zmdi-shopping-basket"></i> Buy</a><h3>₦'+resp.data.price+'/'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
               }
@@ -135,9 +133,7 @@
                   $('#infoModal').modal('show');
                   $('.modal-title').html(title);
                   var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/services/'+resp.data.picture+'" class=""></div>'+
-                      '<div class="col-md-3 text-center"><h4><i class="fa fa-info-circle"></i> Seller-Info</h4><p>'+resp.data.seller+'<br/>'+
-                      ''+resp.data.selleradd+' '+resp.data.sellercity+'<br/>'+resp.data.sellerphone+'</p></div>'+
-                      '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
+                      '<div class="col-md-6 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
                       '</div><div class="col-md-12 text-center"><a class="btn btn-success">Buy</a><h3>₦'+resp.data.price+'/'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
@@ -155,8 +151,8 @@
                   $('#infoModal').modal('show');
                   $('.modal-title').html(title);
                   var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/products/'+resp.data.picture+'" class=""></div>'+
-                      '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
-                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
+                      '<div class="col-md-6 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
+                      '</div><div class="col-md-12 text-center"><a href="checkout?redeemp='+id+'" class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
               }
@@ -173,8 +169,8 @@
                   $('#infoModal').modal('show');
                   $('.modal-title').html(title);
                   var info = '<div class="row"><div class="col-md-4" style="margin-right:10px"><img src="images/services/'+resp.data.picture+'" class=""></div>'+
-                      '<div class="col-md-4 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
-                      '</div><div class="col-md-12 text-center"><a class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
+                      '<div class="col-md-6 text-center"><h4><i class="fa fa-info-circle"></i> Description</h4><p>'+resp.data.details+'</p>'+
+                      '</div><div class="col-md-12 text-center"><a href="checkout?redeems='+id+'" class="btn btn-success">Redeem</a><h3>'+resp.data.points+'eks</h3></div>';
                   $('.modal-body').html(info);
 
               }

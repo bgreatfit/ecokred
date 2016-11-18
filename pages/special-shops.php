@@ -57,17 +57,17 @@
 
 <div class="module row">
     <h3>Christmas is Near
-        <small class="pull-right"><a href="/emp/u/promo-offers.vm" style="color:#777;vertical-align:middle;">See All</a>
-        </small>
+<!--        <small class="pull-right"><a href="/emp/u/promo-offers.vm" style="color:#777;vertical-align:middle;">See All</a>-->
+<!--        </small>-->
     </h3>
 
     <?php
-    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 ORDER BY id desc LIMIT 4");
+    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'seller' AND product_option='christmas' AND approve = 1 ORDER BY id desc LIMIT 20 ");
     $q3->execute();
 
     while($read = $q3->fetch(PDO::FETCH_OBJ)){
 
-    ?>
+        ?>
 
         <div class="col-xs-6 col-sm-6 col-md-3 deals mb" id="deal_2" data-set="local">
             <div class="product-tile">
@@ -78,33 +78,65 @@
                     </div>
                 </a>
                 <div class="hp-deal-banner Groupon">
-                    <h6 class="col-xs-7 logo"><?php echo $read->name;?><br/>Sold by <?php $q32 = $conn->query("SELECT * FROM users WHERE id =".$read->manufacturer_id."")->fetch();echo $q32['shop'];?></h6>
+                    <h6 class="col-xs-7 logo" style="font-weight:700;"><?php echo $read->name;?><br/>Sold by <?php $q32 = $conn->query("SELECT * FROM users WHERE id =".$read->manufacturer_id."")->fetch();echo $q32['shop'];?></h6>
                     <span class="col-xs-5 rewards">&#x20A6;<?php echo number_format($read->price);?> <br> <small><?php echo $read->points;?> EKS</small></span>
                     <p class="product-title"><?php //echo substr($read->details,0);?></p>
                 </div>
             </div>
         </div>
-
-<?php } ?>
-    </div>
+    <?php }?>
+    <div class="clearfix"></div>
+    <?php if($q3->rowCount() == 20){?>
+        <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
+                class="view-text pull-right"><a href="products"> See More </a></span></div><?php }?>
     <?php
-    $query = $conn->prepare("SELECT * FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE option_id = 3 AND approve = 1 ORDER BY id desc LIMIT 1");
+    $q3 = $conn->prepare("SELECT * FROM services WHERE service_type = 'seller' AND product_option='christmas' AND approve = 1 ORDER BY id desc LIMIT 4");
+    $q3->execute();
+
+    while($read = $q3->fetch(PDO::FETCH_OBJ)){
+
+        ?>
+
+        <div class="col-xs-6 col-sm-6 col-md-3 deals mb" id="deal_2" data-set="local">
+            <div class="product-tile">
+                <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="ser deal-link">
+                    <div class="product-img">
+                        <div class="darken"></div>
+                        <img src="images/services/<?php echo $read->thumbnail;?>" class="img-responsive pr-img">
+                    </div>
+                </a>
+                <div class="hp-deal-banner Groupon">
+                    <h6 class="col-xs-7 logo" ><?php echo $read->name;?><br/>Sold by <?php $q32 = $conn->query("SELECT * FROM users WHERE id =".$read->manufacturer_id."")->fetch();echo $q32['shop'];?></h6>
+                    <span class="col-xs-5 rewards">&#x20A6;<?php echo number_format($read->price);?> <br> <small ><?php echo $read->points;?> EKS</small></span>
+                    <p class="product-title"><?php //echo substr($read->details,0);?></p>
+                </div>
+            </div>
+        </div>
+    <?php }?>
+    <div class="clearfix"></div>
+    <?php if($q3->rowCount() == 4){?>
+        <div class="" data-target="favorite-stores"><span class="pull-right caret"></span><span
+                class="view-text pull-right"><a href="services"> See More </a></span></div><?php }?>
+
+</div>
+    <?php
+    $query = $conn->prepare("SELECT * FROM products  WHERE product_type='seller' AND approve = 1  ORDER BY id desc LIMIT 1");
     $query->execute();
 
-    $read = $query->fetch(PDO::FETCH_ASSOC);
+    while ($read = $query->fetch(PDO::FETCH_OBJ)):
 
     ?>
     <div class="row module">
-        <h3 class="greene" >SpotLight Store:<?php echo $read['shop']; ?></h3>
+        <h3 class="greene" >SpotLight Store:<?php $q32 = $conn->query("SELECT * FROM users WHERE id =".$read->manufacturer_id."")->fetch();echo $q32['shop'];?></h3>
 
 
         <div class="store-tile bg-LandsEnd col-xs-12 col-sm-6 featured-store mb">
 
-            <a href="">
+            <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="prod deal-link">
                 <div class="darken"></div>
 
                 <div class="upper-right-orange tc">
-                    <?php echo $read['points']; ?>EKS/&#x20A6;
+                    <?php echo $read->points; ?>EKS/&#x20A6;<?php echo $read->price?>
                 </div>
                 <!-- image size 998*998 -->
                 <img src="images/products/1.jpg" class="img-responsive"/>
@@ -112,9 +144,9 @@
             </a>
 
         </div>
+        <?php endwhile;?>
         <?php
-        $query = $conn->prepare("SELECT products.id,products.name,products.points,products.thumbnail,products.details,users.shop FROM products INNER JOIN users ON products.manufacturer_id= users.id WHERE users.option_id = 2 AND approve = 1 ORDER BY id desc LIMIT 4 OFFSET 1
-");
+        $query = $conn->prepare("SELECT * FROM products  WHERE product_type='seller'  AND approve = 1 ORDER BY id desc LIMIT 4");
         $query->execute();
 
         while($read = $query->fetch(PDO::FETCH_OBJ)){
@@ -122,12 +154,12 @@
             ?>
             <div class="col-xs-6 col-sm-3 products mb" id="product_1">
                 <div class="product-tile">
-                    <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>"  class="prod deal-link">
+                    <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="prod deal-link">
                         <div class="product-img">
                             <div class="darken"></div>
 
                             <div class="upper-right-orange" style="text-align:right; right:0px;">
-                                Save 47%
+                                <?php echo $read->price; ?>
                                 <br/>
                                 <hr/>
                                 <?php echo $read->points;?> EKS
@@ -141,13 +173,13 @@
                     </a>
 
 
-                    <p class="product-title" style="font-size:90%;font-weight:bold;color:#555;"><?php echo $read->details ?></p>
-
-                    <p class="product-details">
-                        <span style="text-decoration:line-through; color:#999;margin-right:5px;font-size:85%">&#x20A6;<?php echo $read->points ?></span>
-                        <span style="font-size:90%;font-weight:bold;">&#x20A6;<?php echo $read->points ?></span>
-                        <span style="margin-left:5px; font-size:90%; color:#555;">Sold by <?php echo $read->shop ?> </span>
-                    </p>
+<!--                    <p class="product-title" style="font-size:90%;font-weight:bold;color:#555;">--><?php //echo $read->details ?><!--</p>-->
+<!---->
+<!--                    <p class="product-details">-->
+<!--                        <span style="text-decoration:line-through; color:#999;margin-right:5px;font-size:85%">&#x20A6;--><?php //echo $read->points ?><!--</span>-->
+<!--                        <span style="font-size:90%;font-weight:bold;">&#x20A6;--><?php //echo $read->points ?><!--</span>-->
+<!--                        <span style="margin-left:5px; font-size:90%; color:#555;">Sold by --><?php //$q32 = $conn->query("SELECT * FROM users WHERE id =".$read->manufacturer_id."")->fetch();echo $q32['shop'];?><!-- </span>-->
+<!--                    </p>-->
                 </div>
             </div>
 
@@ -160,7 +192,7 @@
 <h3>Other Offers You Might Like</h3>
 
     <?php
-    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'featured' AND approve = 1 ORDER BY id desc");
+    $q3 = $conn->prepare("SELECT * FROM products WHERE product_type = 'merchant' AND product_option='featured' AND approve = 1 ORDER BY id desc");
     $q3->execute();
 
     while($read = $q3->fetch(PDO::FETCH_OBJ)){
@@ -168,7 +200,7 @@
     ?>
 <div class="store-tile bg-Kellogg col-lg-2 col-md-3 col-sm-4 col-xs-6 mb mb">
 
-    <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="prod deal-link"
+    <a href="javascript:void(0)" title="<?php echo $read->name;?>" id="<?php echo $read->id;?>" class="prodMer deal-link"
        data-ocid="DnNYtQ5Xe6yEDtmAF2xm" data-brand="Kellogg" data-list="SP Flat" data-pos="1" data-package="E"
        data-points="50 Points" class="promoClick" data-pid="" data-pname="" data-pcre="" data-ppos=""
         >

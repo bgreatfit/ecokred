@@ -13,13 +13,12 @@ if(!$_SESSION['admin']){
 <meta name="description" content="">
 <meta name="author" content="ThemeREX">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
- 
 <link rel="stylesheet" type="text/css" href="./assets/fonts/icomoon/icomoon.css">
  
-<link rel="stylesheet" type="text/css" href="./assets/js/plugins/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/js/plugins/fullcalendar/fullcalendar.min.css">
 <link rel="stylesheet" type="text/css" href="./assets/js/plugins/magnific/magnific-popup.css">
  
 <link rel="stylesheet" type="text/css" href="./assets/js/plugins/c3charts/c3.min.css">
@@ -69,7 +68,7 @@ if(!$_SESSION['admin']){
 </div>
 </header>
  
- 
+ <?php $page = isset($_GET['page']); ?>
 <ul class="nav sidebar-menu">
 <li class="<?php if($page == 'dashboard'){ echo "active";}?>">
 <a href="dashboard">

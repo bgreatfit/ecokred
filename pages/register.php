@@ -1,10 +1,10 @@
 <?php
-if(isset($_SESSION['account']) AND ($_SESSION['account'] == 'user')){
-	exit(header('location:user/home'));
-}else if(isset($_SESSION['account']) AND ($_SESSION['account'] == 'manufacturer')){
-	exit(header('location:seller/home'));
-}
-?>
+//if(isset($_SESSION['account']) AND ($_SESSION['account'] == 'user')){
+//	exit(header('location:user/home'));
+//}else if(isset($_SESSION['account']) AND ($_SESSION['account'] == 'manufacturer')){
+//	exit(header('location:seller/home'));
+//}
+//?>
 <div class="container">
 
 
